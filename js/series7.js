@@ -25,5 +25,10 @@ $(function(){
 
         let colorName = $(this).attr('color');
         $('#series7Image').html(`<img src="./img/series7/series7_not_${colorName}.png" alt="series7_not_${colorName}"></img>`);
+
+        const detailLi = $('#detail li>img');
+        detailLi.each( item => {
+            item.html(`<img src="./img/series7/detail/${colorName}_not_1.png" alt="detail">`)
+        })
     })
 });
